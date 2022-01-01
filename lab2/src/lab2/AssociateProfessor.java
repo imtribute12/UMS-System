@@ -25,3 +25,6 @@ public abstract class AssociateProfessor extends TeachingStaff implements CanAss
 		
 	}
 }
+
+//Can give both Undergraduate and Graduate Courses
+//Can not take an assisting assignment

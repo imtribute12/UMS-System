@@ -16,3 +16,5 @@ public abstract class Lecturer extends TeachingStaff implements CanAssistCourses
 		
 	}
 }
+
+//Can only give Undergraduate Courses

@@ -25,3 +25,7 @@ public class Professor extends TeachingStaff {
 		
 	}
 }
+
+//Can give both Undergraduate and Graduate Courses
+//Can not take an assisting assignment
+

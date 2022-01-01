@@ -3,11 +3,11 @@ package lab2;
 import java.util.ArrayList;
 
 public class CourseData {
-	String courseCode = "NaN";
-	String courseName = "NaN";
-	TeachingStaff instructor  = null;
-	AssistingStaff[] assistant = null; 
-	Student[] student = null;
+	private String courseCode = "NaN";
+	private String courseName = "NaN";
+	private TeachingStaff instructor  = null;
+	private ArrayList<AssistingStaff> assistant = null; 
+	ArrayList<Student> student = null;
 	private int credit;
 	
 	//encapsulation 
@@ -35,14 +35,14 @@ public class CourseData {
 		this.instructor = instructor;
 	}
 	
-	public AssistingStaff[] GetAssistant() {
+	public ArrayList<AssistingStaff> GetAssistant() {
 		
 		return this.assistant;
 	}
 	
-	public void SetAssistant(AssistingStaff[] Assistant) {
+	public void SetAssistant(ArrayList<AssistingStaff> assistant) {
 		
-		this.assistant = Assistant;
+		this.assistant = assistant;
 	}
 	
 	public int getCredit() {
@@ -62,13 +62,13 @@ public class CourseData {
 		this.courseName = courseName;
 		this.instructor = instructor;
 	}
-	public CourseData(String courseCode, String courseName, TeachingStaff instructor, AssistingStaff assistant) {
-		this.courseCode = courseCode;
-		this.courseName = courseName;
-		this.instructor = instructor;
-		//this.assistants = assistant;
-	}
-	public CourseData(String courseCode, String courseName, TeachingStaff instructor, AssistingStaff[] assistant) {
+//	public CourseData(String courseCode, String courseName, TeachingStaff instructor, ArrayList<AssistingStaff> assistant) {
+//		this.courseCode = courseCode;
+//		this.courseName = courseName;
+//		this.instructor = instructor;
+//		this.assistant = assistant;
+//	}
+	public CourseData(String courseCode, String courseName, TeachingStaff instructor, ArrayList<AssistingStaff> assistant) {
 		this.courseCode = courseCode;
 		this.courseName = courseName;
 		this.instructor = instructor;
@@ -82,7 +82,7 @@ public class CourseData {
 		//enrolls student to course, add student given as parameter to the attribute <students>
 	}
 	
-	public ArrayList<Student> getPassedStudents()
+	public ArrayList<Student> getPassedStudents() throws Exception
 	{
 		//returns the set of students that passed the course as an arraylist.
 		//[Exception] throws an exception if any of the students has a missing grade !!!

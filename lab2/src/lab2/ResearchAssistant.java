@@ -1,6 +1,5 @@
 package lab2;
 
-
 public abstract class ResearchAssistant extends AssistingStaff implements CanAssistCourses,CanLabAssist,CanOverseeExams {
 
 	Research research;
