@@ -1,5 +1,5 @@
 package lab2;
 
-public class LabCourseAssisting extends Assignments{
+public class LabCourseAssisting implements Assignments{
 
 }

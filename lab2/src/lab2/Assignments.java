@@ -1,5 +1,5 @@
 package lab2;
 
-public class Assignments {
+public interface Assignments {
 
 }

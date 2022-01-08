@@ -1,7 +1,7 @@
 package lab2;
 
 
-public class Professor extends TeachingStaff {
+public class Professor extends TeachingStaff  {
 
 	Research research;
 	
@@ -17,15 +17,16 @@ public class Professor extends TeachingStaff {
 	
 	public void addAssignment(Assignments assignment)
 	{
-		
+		if(assignment instanceof UnderGraduateCourseData || assignment instanceof GraduateCourseData) {
+			//olur
+		}
+		else if(assignment instanceof CanAssistCourses) {
+			//olmaz
+		}
 	}
 	
 	public void addResearch(Research research)
 	{
-		
+		this.research = research;
 	}
 }
-
-//Can give both Undergraduate and Graduate Courses
-//Can not take an assisting assignment
-

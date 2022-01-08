@@ -1,6 +1,6 @@
 package lab2;
 
-public class CourseAssisting extends Assignments{
+public class CourseAssisting implements Assignments{
 
 
 }

@@ -1,14 +1,17 @@
 package lab2;
 
-public class Academic extends Employee {
+import java.util.ArrayList;
 
-	private Assignments[] assignments;
+public class Academic extends Employee {
 	
-	public Assignments[] getAssignment() {
+	private ArrayList<Assignments> assignments;
+	
+	//encapsulation
+	public ArrayList<Assignments> getAssignment() {
 		return assignments;
 	}
 
-	public void setAssignment(Assignments[] assignment) {
+	public void setAssignment(ArrayList<Assignments> assignment) {
 		this.assignments = assignment;
 	}
 	
@@ -21,6 +24,8 @@ public class Academic extends Employee {
 	//functions
 	public void addAssignment(Assignments assignment)
 	{
-		
+		if(assignment instanceof Academic) {
+			
+		}
 	}
 }

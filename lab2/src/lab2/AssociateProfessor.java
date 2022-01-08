@@ -1,7 +1,7 @@
 package lab2;
 
 
-public abstract class AssociateProfessor extends TeachingStaff implements CanAssistCourses,CanConductResearch{
+public abstract class AssociateProfessor extends TeachingStaff implements CanConductResearch{
 
 	Research research;
 	
@@ -17,14 +17,16 @@ public abstract class AssociateProfessor extends TeachingStaff implements CanAss
 	
 	public void addAssignment(Assignments assignment)
 	{
-		
+		if(assignment instanceof UnderGraduateCourseData || assignment instanceof GraduateCourseData) {
+			//olur
+		}
+		else if(assignment instanceof CanAssistCourses) {
+			//olmaz
+		}
 	}
 	
 	public void addResearch(Research research)
 	{
-		
+		this.research = research;
 	}
 }
-
-//Can give both Undergraduate and Graduate Courses
-//Can not take an assisting assignment

@@ -8,13 +8,15 @@ public abstract class Lecturer extends TeachingStaff implements CanAssistCourses
 	
 	//function
 	public boolean earnedHisSalary() {
+		
 		return false;
 	}
 	
 	public void addAssignment(Assignments assignment)
 	{
-		
+		if(assignment instanceof UnderGraduateCourseData) {
+			//olur
+		}
 	}
 }
 
-//Can only give Undergraduate Courses

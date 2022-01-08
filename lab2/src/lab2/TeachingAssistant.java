@@ -15,6 +15,5 @@ public abstract class TeachingAssistant extends AssistingStaff implements CanAss
 	
 	public void addAssignment(Assignments assignment) {
 		
-		
 	}
 }

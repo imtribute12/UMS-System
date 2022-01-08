@@ -23,6 +23,6 @@ public class TeachingStaff extends Academic {
 	//constructor
 	public TeachingStaff(String identityNumber, String name, String registryNumber) {
 		super(identityNumber, name, registryNumber);
-
+		
 	}
 }

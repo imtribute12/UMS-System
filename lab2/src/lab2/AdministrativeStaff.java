@@ -37,16 +37,20 @@ public class AdministrativeStaff extends Employee {
 	//functions
 	public void addPerformedOperation(Operation operation)
 	{
-		
+		performedOperations.add(operation);
 	}
 	
 	public void addOperationError(UMSException UMSException)
 	{
-		
+		errors.add(UMSException);
 	}
 	
+	@Override
 	public boolean earnedHisSalary()
 	{
+		if(performedOperations.size() >= 10 && errors.size()<performedOperations.size()*10/100) {
+			return true;
+		}
 		return false;
 	}
 

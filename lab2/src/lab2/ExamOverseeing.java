@@ -1,5 +1,5 @@
 package lab2;
 
-public class ExamOverseeing extends Assignments{
+public class ExamOverseeing implements Assignments{
 
 }
