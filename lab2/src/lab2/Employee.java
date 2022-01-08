@@ -44,8 +44,6 @@ public class Employee extends Person {
 //		throws “Overtime Payment Required
 //		Exception” if the employee is eligible for
 //		overtime payment.
-//		CENG 213 Object Oriented Programming [2021/2022 Fall],
-//		Res. Asst. Metehan GÜZEL, metehanguzel@gazi.edu.tr
 //		 Only Maintenance Staff is eligible for
 //		overtime payment.
 //		 Overtime payment criteria is given as
