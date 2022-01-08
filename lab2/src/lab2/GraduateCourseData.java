@@ -11,11 +11,7 @@ public class GraduateCourseData extends CourseData {
 		super(courseCode, courseName, instructor);
 	}
 	public GraduateCourseData(String courseCode, String courseName, TeachingStaff instructor,
-			AssistingStaff assistant) {
-		super(courseCode, courseName, instructor, assistant);
-	}
-	public GraduateCourseData(String courseCode, String courseName, TeachingStaff instructor,
-			AssistingStaff[] assistant) {
+			ArrayList<AssistingStaff> assistant) {
 		super(courseCode, courseName, instructor, assistant);
 	}
 	
